@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+	<p:panel id="basic" header="Cadastro de Hemocentro"
+		style="margin-bottom:20px" >
+
+		<h:form id="formHemocentro">
+		<h:panelGrid columns="1" style="margin:10px 0">
+				<p:outputLabel for="nome">Nome:</p:outputLabel>
+				<p:inputText id="nome"></p:inputText>
+				
+				<br></br>
+				<p:button outcome="/faces/hemocentro/hemocentroList.xhtml"
+					value="Cadastrar Hemocentro"></p:button>
+
+		</h:panelGrid>
+		</h:form>
+
+	</p:panel>
+</h:body>
+</html>
