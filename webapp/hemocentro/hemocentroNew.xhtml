@@ -1,25 +1,28 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:p="http://primefaces.org/ui">
+	template="/templates/template.xhtml">
 
-<h:head></h:head>
-<h:body>
-	<p:panel id="basic" header="Cadastro de Hemocentro"
-		style="margin-bottom:20px" >
+	<ui:define name="metadata"></ui:define>
 
-		<h:form id="formHemocentro">
-		<h:panelGrid columns="1" style="margin:10px 0">
-				<p:outputLabel for="nome">Nome:</p:outputLabel>
-				<p:inputText id="nome"></p:inputText>
-				
-				<br></br>
-				<p:button outcome="/faces/hemocentro/hemocentroList.xhtml"
-					value="Cadastrar Hemocentro"></p:button>
+	<ui:define name="content">
+		<p:panel id="basic" header="Cadastro de Hemocentro"
+			style="margin-bottom:20px">
 
-		</h:panelGrid>
-		</h:form>
+			<h:form id="formHemocentro">
+				<h:panelGrid columns="1" style="margin:10px 0">
+					<p:outputLabel for="nome">Nome:</p:outputLabel>
+					<p:inputText id="nome"></p:inputText>
 
-	</p:panel>
-</h:body>
-</html>
+					<br></br>
+					<p:button outcome="/faces/hemocentro/hemocentroList.xhtml"
+						value="Cadastrar Hemocentro"></p:button>
+
+				</h:panelGrid>
+			</h:form>
+
+		</p:panel>
+	</ui:define>
+</ui:composition>
