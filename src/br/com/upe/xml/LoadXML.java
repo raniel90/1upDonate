@@ -9,7 +9,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import br.com.upe.model.Hemocentro;
-import br.com.upe.model.HemocentroXML;
 
 public class LoadXML {
 

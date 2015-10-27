@@ -1,2 +1,10 @@
+br\com\upe\model\EstoqueSangue.class
+br\com\upe\model\Doacao.class
+br\com\upe\xml\GenerateXML.class
 br\com\upe\model\Hemocentro.class
+br\com\upe\model\Doador.class
+br\com\upe\xml\LoadXML.class
+br\com\upe\xml\HemocentroXML.class
+br\com\upe\model\Campanha.class
+br\com\upe\enums\TipoSanguineo.class
 br\com\upe\bean\HemocentroBean.class

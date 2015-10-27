@@ -8,7 +8,6 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import br.com.upe.model.HemocentroXML;
 import br.com.upe.model.Hemocentro;
 
 public class GenerateXML {
