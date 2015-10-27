@@ -1,5 +1,9 @@
 package br.com.upe.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Hemocentro {
 	private String id;
 	private String nome;
@@ -8,6 +12,7 @@ public class Hemocentro {
 		return id;
 	}
 
+	@XmlElement
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -16,6 +21,7 @@ public class Hemocentro {
 		return nome;
 	}
 
+	@XmlElement
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
