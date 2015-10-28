@@ -4,41 +4,7 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="/templates/template.xhtml">
-	<script type="text/javascript">
-    var currentMarker = null;
- 
-    function handlePointClick(event) {
-        if(currentMarker === null) {
-            document.getElementById('lat').value = event.latLng.lat();
-            document.getElementById('lng').value = event.latLng.lng();
- 
-            currentMarker = new google.maps.Marker({
-                position:new google.maps.LatLng(event.latLng.lat(), event.latLng.lng())
-            });
- 
-            PF('map').addOverlay(currentMarker);
- 
-            PF('dlg').show();
-        }   
-    }
- 
-    function markerAddComplete() {
-        var title = document.getElementById('title');
-        currentMarker.setTitle(title.value);
-        title.value = "";
- 
-        currentMarker = null;
-        PF('dlg').hide();
-    }
- 
-    function cancel() {
-        PF('dlg').hide();
-        currentMarker.setMap(null);
-        currentMarker = null;
- 
-        return false;
-    }
-</script>
+
 	<ui:define name="metadata"></ui:define>
 
 	<ui:define name="content">
@@ -49,18 +15,16 @@
 				<h:panelGrid columns="1" style="margin:10px 0">
 					<p:outputLabel for="nome">Nome:</p:outputLabel>
 					<p:inputText id="nome"></p:inputText>
-
-					<br></br>
-					<p:button outcome="/faces/index.xhtml"
-						value="Cadastrar Hemocentro"></p:button>
-
 				</h:panelGrid>
-				
-				<p:gmap id="gmap" center="36.890257,30.707417" zoom="13" type="HYBRID" style="width:100%;height:400px"
-   				 model="#{addMarkersView.emptyModel}" onPointClick="handlePointClick(event);" widgetVar="map" />
- </h:form>
-		
-
+				<p:outputLabel for="gmap">Endereço:</p:outputLabel>
+				<p:panel id="pnlMap">
+					<p:gmap id="gmap" center="-8.063282,-34.902991" zoom="16"
+						model="#{mapaBean.simpleModel}" type="ROADMAP"
+						style="width:100%;height:400px" />
+				</p:panel>
+				<br></br>
+				<p:button outcome="/faces/index.xhtml" value="Cadastrar Hemocentro"></p:button>
+			</h:form>
 		</p:panel>
 	</ui:define>
 </ui:composition>
