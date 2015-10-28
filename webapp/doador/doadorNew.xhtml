@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+
+	<ui:define name="metadata"></ui:define>
+
+	<ui:define name="content">
+		<p:panel id="basic" header="Cadastro de doador"
+			style="margin-bottom:20px">
+
+			<h:form id="formDoador"  >
+				<h:panelGrid columns="1" style="margin:15px 0px">
+					<p:outputLabel for="nome">Nome:</p:outputLabel>
+					<p:inputText id="nome"></p:inputText>
+
+					<p:outputLabel for="tipoSanguineo">Tipo sanguineo:</p:outputLabel>					
+			        <p:selectOneMenu id="tipoSanguineo"  style="width:250px">
+			            <f:selectItem itemLabel="Selecione.."   />
+			            <f:selectItem itemLabel="O POSITIVO"  />
+			            <f:selectItem itemLabel="O NEGATIVO"  />
+			            <f:selectItem itemLabel="AB POSITIVO"   />
+			            <f:selectItem itemLabel="AB NEGATIVO"  />
+			            <f:selectItem itemLabel="A POSITIVO"  />
+			            <f:selectItem itemLabel="A NEGATIVO"   />
+			            <f:selectItem itemLabel="B POSITIVO"  />
+			            <f:selectItem itemLabel="B NEGATIVO"  />			            
+			        </p:selectOneMenu>
+
+
+					<br></br>
+					<p:button outcome="/faces/index.xhtml" value="Cadastrar doador"></p:button>
+
+				</h:panelGrid>
+			</h:form>
+
+		</p:panel>
+	</ui:define>
+</ui:composition>

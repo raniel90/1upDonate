@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<doadorXML>
+    <doadores>
+        <id>1</id>
+        <nome>Doador : 1</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>2</id>
+        <nome>Doador : 2</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>3</id>
+        <nome>Doador : 3</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>4</id>
+        <nome>Doador : 4</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>5</id>
+        <nome>Doador : 5</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>6</id>
+        <nome>Doador : 6</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>7</id>
+        <nome>Doador : 7</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>8</id>
+        <nome>Doador : 8</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>9</id>
+        <nome>Doador : 9</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>10</id>
+        <nome>Doador : 10</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>11</id>
+        <nome>Doador : 11</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>12</id>
+        <nome>Doador : 12</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>13</id>
+        <nome>Doador : 13</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>14</id>
+        <nome>Doador : 14</nome>
+        <tipoSanguineo>A_POSITIVO</tipoSanguineo>
+    </doadores>
+    <doadores>
+        <id>15</id>
+        <nome>Doador : 15</nome>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doadores>
+</doadorXML>

@@ -1,14 +1,13 @@
 package br.com.upe.xml;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import br.com.upe.model.Hemocentro;
+import br.com.upe.enums.TipoSanguineo;
+import br.com.upe.model.Doador;
 
 public class GenerateXML {
 
@@ -21,16 +20,25 @@ public class GenerateXML {
 	}
 
 	public static void main(String[] args) throws JAXBException {
-		HemocentroXML hemocentroXML = new HemocentroXML();
-		List<Hemocentro> hemocentros = new ArrayList<Hemocentro>();
-		Hemocentro hemocentro = new Hemocentro();
+				
+		DoadorXML doadorXML = new DoadorXML();
 		
-		hemocentro.setId("1");
-		hemocentro.setNome("Hemope");
+		for(int i = 1; i <= 15; i++ ) {
+			Doador doador = new Doador();
+			doador.setId(String.valueOf(i));
+			doador.setNome("Doador : " + i);
+			
+			if( i % 2 == 0){
+				doador.setTipoSanguineo(TipoSanguineo.A_POSITIVO );	
+			}else
+			{
+				doador.setTipoSanguineo(TipoSanguineo.O_NEGATIVO );
+			}
+			
+			
+			doadorXML.getDoadores().add(doador);
+		}
 		
-		hemocentros.add(hemocentro);
-		hemocentroXML.setHemocentros(hemocentros);
-		
-		save("hemocentros.xml", hemocentroXML);
+		save("doadores.xml", doadorXML);
 	}
 }
