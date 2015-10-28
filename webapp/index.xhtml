@@ -4,15 +4,11 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="/templates/template.xhtml">
-	
-	<h:head>
-		<h:outputStylesheet library="css" name="style.css"  />
-	</h:head>
-	
+
 	<ui:define name="metadata"></ui:define>
-	
+
 	<ui:define name="content">
-		<p:chart styleClass="" type="line"
+		<p:chart type="line"
 			model="#{dashBoardBean.areaModelDoacoesPorSemana}"
 			style="height:300px" />
 	</ui:define>
