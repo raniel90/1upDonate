@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<campanhaXML>
+    <campanhas>
+        <cpfRecebedor>063.252.984-80</cpfRecebedor>
+        <dataFinal>31/12/2015</dataFinal>
+        <dataInicial>29/10/2015</dataInicial>
+        <descricao>Mario José da Silva precisa urgentemente de sangue do tipo AB+, pois passará por cirugiaquem puder nos ajudar, ficaremos muito gratos</descricao>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <id>1</id>
+        <nomeRecebedor>Mario José da Silva</nomeRecebedor>
+        <origemCadastro>D</origemCadastro>
+        <tipoSanguineo>AB_POSITIVO</tipoSanguineo>
+    </campanhas>
+    <campanhas>
+        <cpfRecebedor>283.555.434-32</cpfRecebedor>
+        <dataFinal>15/11/2015</dataFinal>
+        <dataInicial>01/11/2015</dataInicial>
+        <descricao>Fernanda Ferreira Melo precisa de sua ajuda para poder fazer seu transplante.</descricao>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <id>2</id>
+        <nomeRecebedor>Fernanda Ferreira Melo</nomeRecebedor>
+        <origemCadastro>D</origemCadastro>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </campanhas>
+</campanhaXML>

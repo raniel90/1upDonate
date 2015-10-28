@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+
+	<ui:define name="metadata"></ui:define>
+
+	<ui:define name="content">
+		<p:panel id="basic" header="Cadastro de Hemocentro"
+			style="margin-bottom:20px">
+
+			<h:form id="formHemocentro">
+				<h:panelGrid columns="1" style="margin:10px 0">
+					<p:outputLabel for="descricao">Descrição da Campanha:</p:outputLabel>
+					<p:inputTextarea rows="10" cols="100"  id="descricao"></p:inputTextarea>
+
+					<br></br>
+					<p:button outcome="/faces/hemocentro/hemocentroList.xhtml"
+						value="Cadastrar Hemocentro"></p:button>
+
+				</h:panelGrid>
+			</h:form>
+
+		</p:panel>
+	</ui:define>
+</ui:composition>

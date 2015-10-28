@@ -9,6 +9,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
 import br.com.upe.enums.TipoSanguineo;
+import br.com.upe.model.Campanha;
 import br.com.upe.model.Doacao;
 import br.com.upe.model.Doador;
 import br.com.upe.model.Hemocentro;
@@ -29,31 +30,42 @@ public class GenerateXML {
 		hemocentro.setId("1");
 		hemocentro.setNome("Hemope");
 
-        DoacaoXML doacaoXML = new DoacaoXML();
-        List<Doacao> doacoes = new ArrayList<Doacao>();
-        Doador doador;
-        Doacao doacao = null;
+        CampanhaXML campanhaXML = new CampanhaXML();
+        List<Campanha> campanhas = new ArrayList<Campanha>();
 
-        for (int i = 1; i <= 10; i++){
-            doador = new Doador();
-            doacao = new Doacao();
+        Campanha camp1 = new Campanha();
+        camp1.setId("1");
+        camp1.setCpfRecebedor("063.252.984-80");
+        camp1.setDataInicial("29/10/2015");
+        camp1.setDataFinal("31/12/2015");
+        camp1.setNomeRecebedor("Mario José da Silva");
+        camp1.setDescricao(camp1.getNomeRecebedor() + " precisa urgentemente de " +
+                           "sangue do tipo AB+, pois passará por cirugia" +
+                           "quem puder nos ajudar, ficaremos muito gratos");
+        camp1.setHemocentro(hemocentro);
+        camp1.setTipoSanguineo(TipoSanguineo.AB_POSITIVO);
+        camp1.setOrigemCadastro("D");
+        campanhas.add(camp1);
 
-            Integer id = i;
-            doador.setId(id.toString());
-            doador.setNome("Doador " + doador.getId());
+        Campanha camp2 = new Campanha();
+        camp2.setId("2");
+        camp2.setCpfRecebedor("283.555.434-32");
+        camp2.setDataInicial("01/11/2015");
+        camp2.setDataFinal("15/11/2015");
+        camp2.setNomeRecebedor("Fernanda Ferreira Melo");
+        camp2.setDescricao(camp2.getNomeRecebedor() + " precisa de sua ajuda para poder fazer seu transplante.");
+        camp2.setHemocentro(hemocentro);
+        camp2.setTipoSanguineo(TipoSanguineo.O_NEGATIVO);
+        camp2.setOrigemCadastro("D");
+        campanhas.add(camp2);
 
 
-            doacao.setHemocentro(hemocentro);
-            doacao.setDoador(doador);
-            doacao.setData("27/12/2015");
-            doacao.setPossuiCampanha(false);
-            doacao.setTipoSanguineo(TipoSanguineo.O_NEGATIVO);
-            doacao.setQtd(id);
-            doacoes.add(doacao);
-        }
+        campanhaXML.setCampanhas(campanhas);
 
-        doacaoXML.setDoacoes(doacoes);
-        save("doacoes.xml", doacaoXML);
+
+
+        campanhaXML.setCampanhas(campanhas);
+        save("campanhas.xml", campanhaXML);
 
 	}
 }

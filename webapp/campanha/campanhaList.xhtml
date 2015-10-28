@@ -1,0 +1,36 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+
+	<ui:define name="metadata"></ui:define>
+
+	<ui:define name="content">
+		<p:panel id="basic" header="Doações de Hoje"
+			style="margin-bottom:20px">
+
+			<p:dataTable var="campanha" value="#{campanhaBean.getCampanhas()}">
+				<p:column headerText="ID" width="5%">
+					<h:outputText value="#{campanha.id}" />
+				</p:column>
+
+				<p:column headerText="Descrição" width="30%">
+					<h:outputText value="#{campanha.descricao}" />
+				</p:column>
+
+                <p:column headerText="CPF do Recebedor" width="18%">
+                    <h:outputText value="#{campanha.cpfRecebedor}" />
+                </p:column>
+
+                <p:column headerText="Nome do Recebedor">
+                    <h:outputText value="#{campanha.nomeRecebedor}" />
+                </p:column>
+                <p:column headerText="Local de doação">
+                    <h:outputText value="#{campanha.hemocentro.nome}" />
+                </p:column>
+			</p:dataTable>
+		</p:panel>
+	</ui:define>
+</ui:composition>
