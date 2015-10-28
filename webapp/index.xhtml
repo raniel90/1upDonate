@@ -8,8 +8,12 @@
 	<ui:define name="metadata"></ui:define>
 
 	<ui:define name="content">
+	<p:panel id="pnlDoacoesCampanha" header="#{msg['label.menu.dashboard']}">
 		<p:chart type="line"
 			model="#{dashBoardBean.areaModelDoacoesPorSemana}"
-			style="height:300px" />
+			style="height:300px"/>
+			<p:chart  type="metergauge" model="#{dashBoardBean.meterGaugeDoacoesDia}" style="width:400px;height:250px;" />
+	</p:panel>
 	</ui:define>
+	
 </ui:composition>
