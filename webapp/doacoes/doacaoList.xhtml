@@ -1,0 +1,33 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+
+	<ui:define name="metadata"></ui:define>
+
+	<ui:define name="content">
+		<p:panel id="basic" header="Doações de Hoje"
+			style="margin-bottom:20px">
+
+			<p:dataTable var="doacao" value="#{doacaoBean.getDoacoes()}">
+				<p:column headerText="Doador">
+					<h:outputText value="#{doacao.doador.nome}" />
+				</p:column>
+
+				<p:column headerText="Data de Doação">
+					<h:outputText value="#{doacao.data}" />
+				</p:column>
+
+                <p:column headerText="Nome da Campanha">
+                    <h:outputText value="#{doacao.campanha.descricao}" />
+                </p:column>
+
+                <p:column headerText="Quantidade">
+                    <h:outputText value="#{doacao.qtd}" />
+                </p:column>
+			</p:dataTable>
+		</p:panel>
+	</ui:define>
+</ui:composition>

@@ -8,6 +8,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+import br.com.upe.enums.TipoSanguineo;
+import br.com.upe.model.Doacao;
+import br.com.upe.model.Doador;
 import br.com.upe.model.Hemocentro;
 
 public class GenerateXML {
@@ -21,16 +24,36 @@ public class GenerateXML {
 	}
 
 	public static void main(String[] args) throws JAXBException {
-		HemocentroXML hemocentroXML = new HemocentroXML();
-		List<Hemocentro> hemocentros = new ArrayList<Hemocentro>();
-		Hemocentro hemocentro = new Hemocentro();
-		
+	List<Hemocentro> hemocentros = new ArrayList<Hemocentro>();
+    	Hemocentro hemocentro = new Hemocentro();
 		hemocentro.setId("1");
 		hemocentro.setNome("Hemope");
-		
-		hemocentros.add(hemocentro);
-		hemocentroXML.setHemocentros(hemocentros);
-		
-		save("hemocentros.xml", hemocentroXML);
+
+        DoacaoXML doacaoXML = new DoacaoXML();
+        List<Doacao> doacoes = new ArrayList<Doacao>();
+        Doador doador;
+        Doacao doacao = null;
+
+        for (int i = 1; i <= 10; i++){
+            doador = new Doador();
+            doacao = new Doacao();
+
+            Integer id = i;
+            doador.setId(id.toString());
+            doador.setNome("Doador " + doador.getId());
+
+
+            doacao.setHemocentro(hemocentro);
+            doacao.setDoador(doador);
+            doacao.setData("27/12/2015");
+            doacao.setPossuiCampanha(false);
+            doacao.setTipoSanguineo(TipoSanguineo.O_NEGATIVO);
+            doacao.setQtd(id);
+            doacoes.add(doacao);
+        }
+
+        doacaoXML.setDoacoes(doacoes);
+        save("doacoes.xml", doacaoXML);
+
 	}
 }

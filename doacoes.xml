@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<doacaoXML>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>1</id>
+            <nome>Doador 1</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>1</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>2</id>
+            <nome>Doador 2</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>2</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>3</id>
+            <nome>Doador 3</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>3</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>4</id>
+            <nome>Doador 4</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>4</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>5</id>
+            <nome>Doador 5</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>5</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>6</id>
+            <nome>Doador 6</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>6</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>7</id>
+            <nome>Doador 7</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>7</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>8</id>
+            <nome>Doador 8</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>8</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>9</id>
+            <nome>Doador 9</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>9</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+    <doacoes>
+        <data>27/12/2015</data>
+        <doador>
+            <id>10</id>
+            <nome>Doador 10</nome>
+        </doador>
+        <hemocentro>
+            <id>1</id>
+            <nome>Hemope</nome>
+        </hemocentro>
+        <possuiCampanha>false</possuiCampanha>
+        <qtd>10</qtd>
+        <tipoSanguineo>O_NEGATIVO</tipoSanguineo>
+    </doacoes>
+</doacaoXML>
