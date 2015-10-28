@@ -4,9 +4,8 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="/templates/template.xhtml">
-	
-	<ui:define name="metadata">
-	</ui:define>
+
+	<ui:define name="metadata"></ui:define>
 
 	<ui:define name="content">
 		<p:panel id="basic" header="Listagem de Hemocentros"
@@ -22,9 +21,5 @@
 				</p:column>
 			</p:dataTable>
 		</p:panel>
-
-	<p:button outcome="/faces/hemocentro/hemocentroNew.xhtml"
-		value="Cadastrar Hemocentro"></p:button>
-	
 	</ui:define>
 </ui:composition>
