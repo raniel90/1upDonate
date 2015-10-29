@@ -43,7 +43,7 @@ public class DashBoardBean implements Serializable {
  
         LineChartSeries doacoes = new LineChartSeries();
         doacoes.setFill(true);
-        doacoes.setLabel("Doações");
+        doacoes.setLabel("DoaÃ§Ãµes");
         doacoes.set("1", 12);
         doacoes.set("2", 15);
         doacoes.set("3", 20);
@@ -80,9 +80,9 @@ public class DashBoardBean implements Serializable {
     private void createMeterGaugeDoacoesDoDia() {
          
         meterGaugeDoacoesDia = initMeterGaugeModel();
-        meterGaugeDoacoesDia.setTitle("Doações por dia");
+        meterGaugeDoacoesDia.setTitle("DoaÃ§Ãµes por dia");
         meterGaugeDoacoesDia.setSeriesColors("66cc66,93b75f,E7E658,cc6666");
-        meterGaugeDoacoesDia.setGaugeLabel("Doações");
+        meterGaugeDoacoesDia.setGaugeLabel("DoÃ§Ãµes");
         meterGaugeDoacoesDia.setGaugeLabelPosition("bottom");
         meterGaugeDoacoesDia.setLabelHeightAdjust(110);
         meterGaugeDoacoesDia.setIntervalOuterRadius(100);

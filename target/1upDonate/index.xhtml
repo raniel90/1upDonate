@@ -4,24 +4,16 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="/templates/template.xhtml">
-	
-	<ui:define name="metadata">
-	</ui:define>
+
+	<ui:define name="metadata"></ui:define>
 
 	<ui:define name="content">
-		<p:panel id="basic" header="Listagem de Hemocentros"
-			style="margin-bottom:20px">
-
-			<p:dataTable var="hemocentro" value="#{hemocentroBean.hemocentros}">
-				<p:column headerText="Id">
-					<h:outputText value="#{hemocentro.id}" />
-				</p:column>
-
-				<p:column headerText="Nome">
-					<h:outputText value="#{hemocentro.nome}" />
-				</p:column>
-			</p:dataTable>
-		</p:panel>
-	
+	<p:panel id="pnlDoacoesCampanha" header="#{msg['label.menu.dashboard']}">
+		<p:chart type="line"
+			model="#{dashBoardBean.areaModelDoacoesPorSemana}"
+			style="height:300px"/>
+			<p:chart  type="metergauge" model="#{dashBoardBean.meterGaugeDoacoesDia}" style="width:400px;height:250px;" />
+	</p:panel>
 	</ui:define>
+	
 </ui:composition>

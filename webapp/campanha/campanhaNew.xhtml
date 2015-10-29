@@ -8,17 +8,33 @@
 	<ui:define name="metadata"></ui:define>
 
 	<ui:define name="content">
-		<p:panel id="basic" header="Cadastro de Hemocentro"
+		<p:panel id="basic" header="Cadastro de Campanhas"
 			style="margin-bottom:20px">
 
 			<h:form id="formHemocentro">
 				<h:panelGrid columns="1" style="margin:10px 0">
 					<p:outputLabel for="descricao">Descrição da Campanha:</p:outputLabel>
 					<p:inputTextarea rows="10" cols="100"  id="descricao"></p:inputTextarea>
+                    <br/>
+
+                    <p:outputLabel for="nomeRecebedor">Nome do Recebedor:</p:outputLabel>
+                    <p:inputText id="nomeRecebedor" size="80"></p:inputText>
+                    <br/>
+
+                    <p:outputLabel for="cpfRecebedor">CPF do Recebedor:</p:outputLabel>
+                    <p:inputMask id="cpfRecebedor" size="30" mask="999.999.999-99" />
+                    <br/>
+
+                    <p:outputLabel for="cpfRecebedor">Hemocentro da campanha:</p:outputLabel>
+                    <p:selectOneMenu id="console" value="" style="width:125px">
+                        <f:selectItem itemLabel="Hemope" itemValue="1" />
+                        <f:selectItem itemLabel="Ihene" itemValue="2" />
+                        <f:selectItem itemLabel="Hemato" itemValue="P3" />
+                    </p:selectOneMenu>
 
 					<br></br>
-					<p:button outcome="/faces/hemocentro/hemocentroList.xhtml"
-						value="Cadastrar Hemocentro"></p:button>
+					<p:button outcome="/faces/campanha/campanhaList.xhtml"
+						value="Cadastrar Campanha"></p:button>
 
 				</h:panelGrid>
 			</h:form>
