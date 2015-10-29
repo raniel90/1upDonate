@@ -10,7 +10,6 @@ import javax.xml.bind.Marshaller;
 
 import br.com.upe.enums.TipoSanguineo;
 import br.com.upe.model.Campanha;
-import br.com.upe.model.Doacao;
 import br.com.upe.model.Doador;
 import br.com.upe.model.Hemocentro;
 
@@ -25,6 +24,27 @@ public class GenerateXML {
 	}
 
 	public static void main(String[] args) throws JAXBException {
+				
+		DoadorXML doadorXML = new DoadorXML();
+		
+		for(int i = 1; i <= 15; i++ ) {
+			Doador doador = new Doador();
+			doador.setId(String.valueOf(i));
+			doador.setNome("Doador : " + i);
+			
+			if( i % 2 == 0){
+				doador.setTipoSanguineo(TipoSanguineo.A_POSITIVO );	
+			}else
+			{
+				doador.setTipoSanguineo(TipoSanguineo.O_NEGATIVO );
+			}
+			
+			
+			doadorXML.getDoadores().add(doador);
+		}
+		
+		save("doadores.xml", doadorXML);
+		
 	List<Hemocentro> hemocentros = new ArrayList<Hemocentro>();
     	Hemocentro hemocentro = new Hemocentro();
 		hemocentro.setId("1");

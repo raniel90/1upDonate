@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import br.com.upe.model.Doador;
-
 @XmlRootElement
 public class DoadorXML {
 	private List<Doador> doadores;
