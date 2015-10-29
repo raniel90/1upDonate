@@ -1,13 +1,13 @@
 package br.com.upe.bean;
 
-import br.com.upe.model.Campanha;
-import br.com.upe.model.Doacao;
-import br.com.upe.xml.LoadXML;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import java.util.ArrayList;
-import java.util.List;
+
+import br.com.upe.model.Campanha;
+import br.com.upe.xml.LoadXML;
 
 /**
  * Created by ximenes on 27/10/15.

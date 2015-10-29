@@ -1,0 +1,31 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+
+	<ui:define name="metadata"></ui:define>
+
+	<ui:define name="content">
+		<p:panel id="basic" header="Listagem de doadores cadastrados"
+			style="margin-bottom:20px">
+
+			<p:dataTable var="doador" value="#{doadorBean.doadores}">
+				<p:column headerText="Id">
+					<h:outputText value="#{doador.id}" />
+				</p:column>
+
+				<p:column headerText="Nome">
+					<h:outputText value="#{doador.nome}" />
+				</p:column>
+				
+				<p:column headerText="Tipo Sanguineo">
+					<h:outputText value="#{doador.tipoSanguineo}" />
+				</p:column>
+				
+			</p:dataTable>
+		</p:panel>
+		
+	</ui:define>
+</ui:composition>

@@ -1,11 +1,11 @@
 package br.com.upe.xml;
 
-import br.com.upe.model.Campanha;
-import br.com.upe.model.Doacao;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
+
+import br.com.upe.model.Campanha;
 
 @XmlRootElement
 public class CampanhaXML {
@@ -19,6 +19,4 @@ public class CampanhaXML {
 	public void setCampanhas(List<Campanha> campanhas) {
 		this.campanhas = campanhas;
 	}
-
-	
 }
